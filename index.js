@@ -91,15 +91,27 @@ setInterval( function () {
     c.strokeStyle = '#000'
     c.fillStyle = '#000'
     c.fillStyle = '#f00'
+    c.beginPath();
+    c.rect(50,50,50,50);
+    c.closePath();
+    c.stroke();
+    c.beginPath();
+    c.rect(110,50,50,50);
+    c.closePath();
+    c.stroke();
+    c.beginPath();
+    c.rect(50,110,110,120);
+    c.closePath();
+    c.stroke();
     if (Lmouse == 1) {
       c.beginPath();
-      c.rect(50,50,50,50);
+      c.rect(52,52,46,46);
       c.closePath();
       c.fill();
     }
     if (Rmouse == 1) {
       c.beginPath();
-      c.rect(110,50,50,50);
+      c.rect(112,52,46,46);
       c.closePath();
       c.fill();
     }
